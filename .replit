@@ -1,4 +1,6 @@
 run = "npm run dev"
+# run = "sudo apt-get update && sudo apt-get install -y openssl libssl-dev && npm start"
+
 modules = ["nodejs-20"]
 [nix]
 channel = "stable-24_05"
@@ -9,3 +11,7 @@ run = ["sh", "-c", "npm run dev"]
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[[ports]]
+localPort = 5555
+externalPort = 6000

@@ -1,5 +1,14 @@
 import express from "express";
 
+  import { PrismaClient } from '@prisma/client'
+
+ // const prisma = new PrismaClient()
+
+/*
+tiagosoftdev
+HwArcZ7C01nxxivC
+*/
+
 const app = express();
 
 app.use(express.json());
@@ -11,8 +20,7 @@ app.get("/usuarios", (req, res) => {
 });
 
 app.post('/usuarios', (req, res)=>{
-  users.push(req.body)
-  res.status(201).json(req.body)
+ 
 })
 
 app.listen(3000, () => {

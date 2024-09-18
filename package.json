@@ -12,7 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "evp_bytestokey": "^1.0.3",
     "express": "^4.21.0",
-    "nodemon": "^3.1.5"
+    "jsencrypt": "^3.3.2",
+    "nodemon": "^3.1.5",
+    "openssl": "^2.0.0",
+    "prisma": "^5.19.1"
   }
 }
