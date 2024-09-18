@@ -1,0 +1,18 @@
+{
+  "name": "api-node-express-mongo-cadastro-usuarios",
+  "version": "1.0.0",
+  "description": "Criando uma API do zero com Node, Express e Mongo.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "nodemon": "^3.1.5"
+  }
+}
