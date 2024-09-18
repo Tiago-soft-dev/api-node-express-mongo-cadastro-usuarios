@@ -2,12 +2,9 @@ import express from "express";
 
   import { PrismaClient } from '@prisma/client'
 
- // const prisma = new PrismaClient()
+  const prisma = new PrismaClient()
 
-/*
-tiagosoftdev
-HwArcZ7C01nxxivC
-*/
+
 
 const app = express();
 
@@ -16,11 +13,19 @@ app.use(express.json());
 const users = [];
 
 app.get("/usuarios", (req, res) => {
-  res.json(users);
+  res.status(200).send('rota get')
 });
 
-app.post('/usuarios', (req, res)=>{
+app.post('/usuarios',async (req, res)=>{
  
+  await prisma.user.create({
+    data: {
+      email: req.body.email,
+      name: req.body.name,
+      age: req.body.age
+    }
+  })
+
 })
 
 app.listen(3000, () => {
